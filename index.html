@@ -4,15 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <div id="mainDiv">
     <header>
-        <h1>Library</h1>
+        <h1>My Library</h1>
     </header>
-    <div id="displayBook">
+    <div class="newBookDiv">
+        <form class="form-container">
+            <h2>New Book</h1>
+            
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Enter Title" name="title" autocomplete="off" required>
+        
+            <label for="author"><b>Author</b></label>
+            <input type="text" placeholder="Enter author" name="author" autocomplete="off" required>
+
+            <label for="pages"><b>Pages</b></label>
+            <input type="number" placeholder="Number of Pages" name="pages" autocomplete="off" required>
+        
+            <button type="button" id="addBook">➕</button>
+        </form>
     </div>
-    <button id="addBook">add book</button>
+
+    <div id="displayBook">
+        
+    </div>
+
+    <div id="editFormDiv">
+        <form class="form-container" id="editForm">
+            <h2>Edit Book</h1>
+            
+            <label for="title"><b>Edit Title</b></label>
+            <input type="text" placeholder="Enter Title" name="title" autocomplete="off" required><br>
+        
+            <label for="author"><b>Edit Author</b></label>
+            <input type="text" placeholder="Enter Author" name="author" autocomplete="off" required><br>
+
+            <label for="pages"><b>Edit Pages</b></label>
+            <input type="number" placeholder="Enter Pages" name="pages" autocomplete="off" required><br>
+        
+            <button type="button" id="closeEditForm">Edit</button>
+        </form>
+    </div>
+
+    
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
